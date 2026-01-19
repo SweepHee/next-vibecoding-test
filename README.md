@@ -31,7 +31,19 @@
   - **Create:** 자동 작성자 연결 및 검증 로직이 포함된 게시글 생성.
   - **Read:** 동적 리스트 뷰 및 상세 게시글 조회.
   - **Update/Delete:** 권한 기반 작업 (수정/삭제 버튼은 작성자 본인에게만 표시되며 접근 가능).
+- **Comprehensive Testing:**
+  - Vitest 및 React Testing Library를 사용한 단위, 통합, UI 테스트 구현.
+  - Mocking을 활용하여 실제 데이터베이스 연결 없이도 비즈니스 로직 및 API 검증 가능.
 - **Modern User Experience:** shadcn/ui의 세련된 UI 컴포넌트와 커스텀 스타일링이 적용된 Sonner 토스트 시스템을 통한 직관적인 피드백 제공.
+
+## 🧪 Testing
+이 프로젝트는 테스트 안정성을 위해 Vitest를 도입했습니다.
+
+### 테스트 실행 방법:
+```bash
+npm run test
+```
+이 명령어를 실행하면 서비스 레이어, API 라우트, 그리고 프론트엔드 컴포넌트에 대한 모든 테스트가 실행됩니다.
 
 ## 🛡️ Error Handling Architecture
 이 프로젝트는 보안과 명확한 피드백을 위해 설계된 정교하고 중앙 집중화된 에러 처리 시스템을 갖추고 있습니다:
